@@ -18,12 +18,16 @@ type repositoryItemAssetsChecksum struct {
 
 // RepositoryItemAsset describes the assets associated with a component
 type RepositoryItemAsset struct {
-	DownloadURL string                       `json:"downloadUrl"`
-	Path        string                       `json:"path"`
-	ID          string                       `json:"id"`
-	Repository  string                       `json:"repository"`
-	Format      string                       `json:"format"`
-	Checksum    repositoryItemAssetsChecksum `json:"checksum"`
+	DownloadURL    string                       `json:"downloadUrl"`
+	Path           string                       `json:"path"`
+	ID             string                       `json:"id"`
+	Repository     string                       `json:"repository"`
+	Format         string                       `json:"format"`
+	Checksum       repositoryItemAssetsChecksum `json:"checksum"`
+	ContentType    string                       `json:"contentType"`
+	LastModified   string                       `json:"lastModified"`
+	BlobCreated    string                       `json:"blobCreated"`
+	LastDownloaded string                       `json:"lastDownloaded"`
 }
 
 type listAssetsResponse struct {
